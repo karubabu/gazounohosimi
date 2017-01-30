@@ -7,6 +7,7 @@ from apiclient.discovery import build
 import pprint
 import shutil
 
+# dict型
 import key
 
 # google custom searchで画像検索してくる　keyword = 検索単語　n = 個数
@@ -62,7 +63,7 @@ def download_images(keyword, image_url):
         except:
             continue
 
-def main():
+def _main():
 
     keyword = "アニメ"        
     image_url = search_images(keyword,30)
@@ -70,4 +71,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    _main()
